@@ -1,0 +1,15 @@
+:root {
+    --color-text: #FFFCF9;
+    --color-greenblue: #B1EDE8;
+    --color-pink: #FF6978;
+    --color-bluebolita: #7F95D1;
+    --color-darkest: #000000;
+}
+
+/* .landing {
+    background-color: var(--color-darkest);
+} */
+
+.navbarlist{
+    color: var(--color-text)
+}
