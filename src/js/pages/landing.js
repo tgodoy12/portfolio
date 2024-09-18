@@ -1,5 +1,5 @@
 import React from "react";
-import avatar from "./../img/avatar.png";
+
 import "./../../styles/landing.css"
 
 
@@ -21,27 +21,18 @@ const Landing = () => {
           />
         </div>
 
-        {/* Sección principal con flex */}
-        <div className="mx-auto max-w-7xl py-32 sm:py-48 lg:py-56 flex flex-col md:flex-row items-center justify-between">
-          
-          {/* Imagen primero en pantallas pequeñas */}
-          <div className="md:order-2 mb-8 md:mb-0 lg:me-16">
-            <img
-              src={avatar}
-              alt="Avatar"
-              style={{ height: "300px", width: "300px" }}
-              className="object-cover rounded-full outline outline-offset-4 outline-[#FF6978]"
-            />
-          </div>
+        {/* Sección principal */}
+        <div className="mx-auto max-w-7xl py-32 sm:py-48 lg:py-56">
+          <div className="flex flex-col items-center text-center">
+            <div className="principal-text">
+              <p className="text-xl text-[#FFFCF9] text-start">Hey there! I'm</p>
+              <h1 className="mt-6 text-6xl font-bold text-[#FFFCF9] text-start">Trilce Godoy</h1>
+              <p className="mt-5 text-sm text-[#FFFCF9] text-start">
+                I'm a Fullstack Developer focused on building clean, efficient, <br />
+                and scalable web applications.
+              </p>
 
-          {/* Texto después de la imagen en pantallas pequeñas */}
-          <div className="max-w-lg text-start md:order-1 lg:ms-16">
-            <p className="text-xl text-[#FFFCF9]">Hey there! I'm</p>
-            <h1 className="mt-6 text-6xl font-bold text-[#FFFCF9]">Trilce Godoy</h1>
-            <p className="mt-4 text-lg text-[#FFFCF9]">
-              A passionate Fullstack web developer
-            </p>
-            <div className="mt-10 flex items-center justify-start gap-x-6">
+              <div className="mt-10 flex items-center gap-x-6">
               <a
                 href="/"
                 className="rounded-md bg-[#FF6978] px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-[#7F95D1] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
@@ -55,6 +46,11 @@ const Landing = () => {
                 See my work <span aria-hidden="true">→</span>
               </a>
             </div>
+            
+            </div>
+            
+             
+            
           </div>
         </div>
 

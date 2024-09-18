@@ -11,5 +11,5 @@
 
 body {
   background-color: var(--color-darkest);
-  font-family: "League Spartan", sans-serif;
+  font-family: monospace;
 }
