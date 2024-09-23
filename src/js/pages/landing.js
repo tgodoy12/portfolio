@@ -1,5 +1,6 @@
 import React from "react";
 import "./../../styles/landing.css"
+import { Link } from "react-router-dom";
 
 const Landing = () => {
   return (
@@ -32,34 +33,30 @@ const Landing = () => {
               </p>
 
               {/* Botones social y see my work */}
-              <div className="mt-10 flex-box gap-x-6">
+              <div className="mt-10 flex justify-between">
               
-              <div className="social-icons flex">
-                <i className="fab fa-linkedin fa-lg me-5" style={{color: "#ff6978"}}></i>
-                <i className="fab fa-github fa-lg me-5" style={{color: "#ff6978"}}></i>
-                <i class="fas fa-envelope fa-lg" style={{color: "#ff6978"}}></i>
+              <div className="social-icons content-center ms-5 flex gap-5">
+                <div className="w-10 h-10 flex items-center justify-center transition-all duration-300 hover:bg-[#FF6978] hover:scale-125 rounded-full">
+                  <i className="fab fa-linkedin fa-lg" style={{ color: "#FFFCF9" }}></i>
+                </div>
+                <div className="w-10 h-10 flex items-center justify-center transition-all duration-300 hover:bg-[#FF6978] hover:scale-125 rounded-full">
+                  <i className="fab fa-github fa-lg" style={{ color: "#FFFCF9" }}></i>
+                </div>
+                <div className="w-10 h-10 flex items-center justify-center transition-all duration-300 hover:bg-[#FF6978] hover:scale-125 rounded-full">
+                  <i className="fas fa-envelope fa-lg" style={{ color: "#FFFCF9" }}></i>
+                </div>
               </div>
               
-              <div className="see-my-work-button mt-60">
-                <div>
-                  <a
-                    href="/"
-                    className="text-sm font-semibold leading-6 text-[#FFFCF9]"
-                  >
-                    See my work
-                  </a>
-                </div>
-                <div className="flex justify-center mt-2">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6 text-[#FFFCF9]">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 17.25 12 21m0 0-3.75-3.75M12 21V3" />
-                  </svg>
-                </div>
-                
-                
-               
-                
+              <div className="see-my-work-button me-5">
+                <Link
+                  href="/"
+                  className="duration-300 font-semibold text-[#FFFCF9] group text-base"
+                >
+                  See my work{" "}
+                  <i className="fas fa-angle-right p-2 transition-transform duration-300 w-8 h-8 group-hover:translate-x-2 group-hover:bg-[#FF6978] rounded-full"></i>
+                </Link>
+              </div>
 
-              </div>
               
             </div>
             

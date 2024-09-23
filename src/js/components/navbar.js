@@ -2,14 +2,15 @@ import React, {useState} from "react";
 import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import trilce from "./../img/trilce.svg"
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
 
     const navigation = [
-        { name: 'About', href: '#' },
-        { name: 'Skills', href: '#' },
-        { name: 'Projects', href: '#' },
-        { name: 'Contact', href: '#' },
+        { name: 'About', to: '/about' },
+        { name: 'Skills', to: '/skills' },
+        { name: 'Projects', to: '/projects' },
+        { name: 'Contact', to: '/contact' },
     ]
 
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -25,7 +26,7 @@ const Navbar = () => {
                 alt="trilce icon"
                 src={trilce}
                 style={{ height: '60px', width: '60px' }}
-                className="object-cover align-middle"
+                className="object-cover align-middle flex items-center transition-all duration-300 hover:scale-125"
               />
             </a>
           </div>
@@ -41,9 +42,9 @@ const Navbar = () => {
           </div>
           <div className="hidden lg:flex lg:gap-x-12 items-baseline">
             {navigation.map((item) => (
-              <a key={item.name} href={item.href} className="navbarlist text-sm font-semibold leading-6 text-gray-900">
+              <Link key={item.name} to={item.to} className="navbarlist text-sm font-semibold flex items-center hover:px-3 justify-center transition-all duration-300 hover:bg-[#FF6978] hover:scale-125 rounded-full">
                 {item.name}
-              </a>
+              </Link>
             ))}
           </div>
         </nav>
