@@ -1,8 +1,5 @@
 import React from "react";
-
 import "./../../styles/landing.css"
-
-
 
 const Landing = () => {
   return (
@@ -27,24 +24,43 @@ const Landing = () => {
             <div className="principal-text">
               <p className="text-xl text-[#FFFCF9] text-start">Hey there! I'm</p>
               <h1 className="mt-6 text-6xl font-bold text-[#FFFCF9] text-start">Trilce Godoy</h1>
+          
+              
               <p className="mt-5 text-sm text-[#FFFCF9] text-start">
                 I'm a Fullstack Developer focused on building clean, efficient, <br />
                 and scalable web applications.
               </p>
 
-              <div className="mt-10 flex items-center gap-x-6">
-              <a
-                href="/"
-                className="rounded-md bg-[#FF6978] px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-[#7F95D1] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-              >
-                Let’s build together
-              </a>
-              <a
-                href="/"
-                className="text-sm font-semibold leading-6 text-[#FFFCF9]"
-              >
-                See my work <span aria-hidden="true">→</span>
-              </a>
+              {/* Botones social y see my work */}
+              <div className="mt-10 flex-box gap-x-6">
+              
+              <div className="social-icons flex">
+                <i className="fab fa-linkedin fa-lg me-5" style={{color: "#ff6978"}}></i>
+                <i className="fab fa-github fa-lg me-5" style={{color: "#ff6978"}}></i>
+                <i class="fas fa-envelope fa-lg" style={{color: "#ff6978"}}></i>
+              </div>
+              
+              <div className="see-my-work-button mt-60">
+                <div>
+                  <a
+                    href="/"
+                    className="text-sm font-semibold leading-6 text-[#FFFCF9]"
+                  >
+                    See my work
+                  </a>
+                </div>
+                <div className="flex justify-center mt-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6 text-[#FFFCF9]">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 17.25 12 21m0 0-3.75-3.75M12 21V3" />
+                  </svg>
+                </div>
+                
+                
+               
+                
+
+              </div>
+              
             </div>
             
             </div>
