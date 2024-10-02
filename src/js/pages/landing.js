@@ -35,21 +35,30 @@ const Landing = () => {
               {/* Botones social y see my work */}
               <div className="mt-10 flex justify-between">
               
-              <div className="social-icons content-center ms-5 flex gap-5">
-                <div className="w-10 h-10 flex items-center justify-center transition-all duration-300 hover:bg-[#FF6978] hover:scale-125 rounded-full">
-                  <i className="fab fa-linkedin fa-lg" style={{ color: "#FFFCF9" }}></i>
-                </div>
-                <div className="w-10 h-10 flex items-center justify-center transition-all duration-300 hover:bg-[#FF6978] hover:scale-125 rounded-full">
-                  <i className="fab fa-github fa-lg" style={{ color: "#FFFCF9" }}></i>
-                </div>
-                <div className="w-10 h-10 flex items-center justify-center transition-all duration-300 hover:bg-[#FF6978] hover:scale-125 rounded-full">
-                  <i className="fas fa-envelope fa-lg" style={{ color: "#FFFCF9" }}></i>
-                </div>
+              <div className="social-icons content-center flex gap-5">
+                <a href="https://www.linkedin.com/in/trilce-godoy/" target="_blank" rel="noopener noreferrer">
+                  <div className="w-10 h-10 flex items-center justify-center transition-all duration-300 hover:bg-[#FF6978] hover:scale-125 rounded-full">
+                    <i className="fab fa-linkedin fa-lg" style={{ color: "#FFFCF9" }}></i>
+                  </div>
+                </a>
+
+                <a href="https://github.com/tgodoy12" target="_blank" rel="noopener noreferrer">
+                  <div className="w-10 h-10 flex items-center justify-center transition-all duration-300 hover:bg-[#FF6978] hover:scale-125 rounded-full">
+                    <i className="fab fa-github fa-lg" style={{ color: "#FFFCF9" }}></i>
+                  </div>
+                </a>
+
+                <Link to="/contact">
+                  <div className="w-10 h-10 flex items-center justify-center transition-all duration-300 hover:bg-[#FF6978] hover:scale-125 rounded-full">
+                    <i className="fas fa-envelope fa-lg" style={{ color: "#FFFCF9" }}></i>
+                  </div>
+                </Link>
+               
               </div>
               
               <div className="see-my-work-button me-5">
                 <Link
-                  href="/"
+                  to="/projects"
                   className="duration-300 font-semibold text-[#FFFCF9] group text-base"
                 >
                   See my work{" "}
