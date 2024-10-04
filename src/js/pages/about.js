@@ -1,31 +1,49 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const About = () => {
 
     // agregar: download cv, certificates in grid, avatar and carousel skills
     return (
-        <div className="min-h-screen bg-[#7F95D1] flex items-center">
+        <div className="min-h-screen bg-[#7F95D1] flex items-center pt-24 sm:pt-0">
 
-            <div className="column-2 w-1/2">
-                <div className="avatar-box flex justify-center">
-                    <img 
+            <div className="lg:flex gap-10 w-full">
+                
+                {/* Columna más pequeña */}
+                <div className="avatar-box flex justify-center flex-[1] mx-10 mb-10 lg:mb-0">
+                <img 
                     src="https://picsum.photos/300" 
                     alt="avatar" 
-                    className="rounded-full"/>
+                    className="rounded-full"
+                />
                 </div>
-
-            </div>
-
-            <div className="column-2 w-1/2">
                 
-                <div className="about-text flex justify-center me-12">
-                    <p>I'm a passionate Fullstack Developer with a love for creating effecive web solutions .
-                        My journey into tech started with a deep curiosity about how websites and applications are built, which led me to immerse myself in learning everything from frontend design to backend functionality.
-                    </p>
+                {/* Columna más ancha */}
+                <div className="about-text flex flex-wrap flex-[2] mx-12 lg:ms-0 lg:me-12 lg:items-center xl:pe-24">
+
+                <p className="mb-5 sm:mb-0">I'm a passionate Fullstack Developer with a love for creating effective web solutions.
+                    My journey into tech started with a deep curiosity about how websites and applications are built, 
+                    which led me to immerse myself in learning everything from frontend design to backend functionality.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae expedita voluptas dolore. Consequuntur beatae similique quibusdam officia, obcaecati veniam rem recusandae amet. Ea repudiandae aut earum facilis voluptatum omnis quas?
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore cupiditate, incidunt impedit quisquam expedita, possimus ipsam iste eum recusandae delectus suscipit quaerat? Officia, possimus dicta! Recusandae deserunt magnam vero ipsum.
+                </p>
+
+                <div className="flex justify-start">
+                    <Link
+                    to="/"
+                    className="duration-300 font-semibold text-[#FFFCF9] group text-base"
+                    >
+                    Download CV
+                    <i className="fas fa-angle-right p-2 transition-transform duration-300 w-8 h-8 group-hover:translate-x-2 group-hover:bg-[#FF6978] rounded-full"></i>
+                    </Link>
+                </div>
+                
+             
+
                 </div>
 
-               
             </div>
+
             
         </div>
     )
