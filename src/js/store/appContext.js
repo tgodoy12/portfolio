@@ -18,7 +18,7 @@ const injectContext = PassedComponent => {
         );
 
         useEffect(() => {
-			state.actions.exampleFunction();
+			
 		}, [state.actions]);
 
         return (

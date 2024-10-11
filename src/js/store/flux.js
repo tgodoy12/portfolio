@@ -1,14 +1,14 @@
+import skillsData from "../assets/skills.json"; // Ajusta la ruta según tu estructura
+
 const getState = ({ getStore, getActions, setStore }) => {
     return {
         store: {
-            item1: null,
-            item2: {},
-            item3: ["hola", "mundo"],
+            skills: []
         },
 
         actions: {
-            exampleFunction: () => {
-                console.log("This is an example function");
+            loadSkills: () => {
+                setStore({ skills: skillsData.skills });
             }
         }
     };

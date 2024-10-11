@@ -1,0 +1,8 @@
+.about-title{
+    font-weight: 500;
+}
+
+.avatar-box{
+    align-content: center;
+    flex-wrap: wrap;
+}
