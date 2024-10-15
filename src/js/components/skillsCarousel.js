@@ -44,7 +44,7 @@ const SkillsCarousel = () => {
     };
 
     return (
-        <div className="bg-[#FBFBFF] px-11">
+        <div className="min-h-1/2vh bg-[#FBFBFF] px-11">
             <div
                 ref={carouselRef}
                 className="flex overflow-x-scroll no-scrollbar gap-6 p-4"

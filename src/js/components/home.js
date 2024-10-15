@@ -8,7 +8,7 @@ import PolygonBottom from "./polygonBottom";
 const Home = () => {
     return (
         <div className="isolate min-h-screen px-6 pt-14 lg:px-8 bg-[#000000]">
-        <PolygonTop />
+        <PolygonTop class="absolute"/>
 
         {/* Sección principal */}
         <div className="mx-auto max-w-7xl py-32 sm:py-48 lg:py-56">

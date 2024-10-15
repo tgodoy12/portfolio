@@ -1,10 +1,10 @@
 import React from "react";
 
-const PolygonTop = () => {
+const PolygonTop = (props) => {
     return (
         <div
           aria-hidden="true"
-          className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+          className={`${props.class ? props.class : ""} inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80`}
         >
           <div
             style={{
