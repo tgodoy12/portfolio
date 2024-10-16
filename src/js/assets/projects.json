@@ -1,26 +1,28 @@
-[
-    {
-        "name": "Mascotapp",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae expedita voluptas dolore. Consequuntur beatae similique quibusdam officia, obcaecati veniam rem recusandae amet. Ea repudiandae aut earum facilis voluptatum omnis quas?",
-        "tools": "React, Flask, Javascript, Python, Bootstrap",
-        "image": "image"
-    },
-    {
-        "name": "Money Track",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae expedita voluptas dolore. Consequuntur beatae similique quibusdam officia, obcaecati veniam rem recusandae amet. Ea repudiandae aut earum facilis voluptatum omnis quas?",
-        "tools": "React, Flask, Javascript, Python, Bootstrap",
-        "image": "image"
-    },
-    {
-        "name": "Star Wars API",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae expedita voluptas dolore. Consequuntur beatae similique quibusdam officia, obcaecati veniam rem recusandae amet. Ea repudiandae aut earum facilis voluptatum omnis quas?",
-        "tools": "React, Flask, Javascript, Python, Bootstrap",
-        "image": "image"
-    },
-    {
-        "name": "Project 4",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae expedita voluptas dolore. Consequuntur beatae similique quibusdam officia, obcaecati veniam rem recusandae amet. Ea repudiandae aut earum facilis voluptatum omnis quas?",
-        "tools": "React, Flask, Javascript, Python, Bootstrap",
-        "image": "image"
-    }
-]
+{
+    "projects": [
+        {
+            "name": "Mascotapp",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae expedita voluptas dolore. Consequuntur beatae similique quibusdam officia, obcaecati veniam rem recusandae amet. Ea repudiandae aut earum facilis voluptatum omnis quas?",
+            "tools": "React, Flask, Javascript, Python, Bootstrap",
+            "image": "image"
+        },
+        {
+            "name": "Money Track",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae expedita voluptas dolore. Consequuntur beatae similique quibusdam officia, obcaecati veniam rem recusandae amet. Ea repudiandae aut earum facilis voluptatum omnis quas?",
+            "tools": "React, Flask, Javascript, Python, Bootstrap",
+            "image": "image"
+        },
+        {
+            "name": "Star Wars API",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae expedita voluptas dolore. Consequuntur beatae similique quibusdam officia, obcaecati veniam rem recusandae amet. Ea repudiandae aut earum facilis voluptatum omnis quas?",
+            "tools": "React, Flask, Javascript, Python, Bootstrap",
+            "image": "image"
+        },
+        {
+            "name": "Project 4",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae expedita voluptas dolore. Consequuntur beatae similique quibusdam officia, obcaecati veniam rem recusandae amet. Ea repudiandae aut earum facilis voluptatum omnis quas?",
+            "tools": "React, Flask, Javascript, Python, Bootstrap",
+            "image": "image"
+        }
+    ]
+}

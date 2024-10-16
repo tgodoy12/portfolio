@@ -1,14 +1,20 @@
-import skillsData from "../assets/skills.json"; // Ajusta la ruta según tu estructura
+import skillsData from "../assets/skills.json";
+import projectsList from "../assets/projects.json";
 
 const getState = ({ getStore, getActions, setStore }) => {
     return {
         store: {
-            skills: []
+            skills: [],
+            projects: []
         },
 
         actions: {
             loadSkills: () => {
                 setStore({ skills: skillsData.skills });
+            },
+
+            loadProjects: async () => {
+                await setStore({ projects: projectsList.projects })
             }
         }
     };
