@@ -14,3 +14,8 @@ body {
   
   font-family: monospace;
 }
+
+.title {
+  color: var(--color-text);
+  
+}
