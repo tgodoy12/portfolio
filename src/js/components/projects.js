@@ -15,7 +15,7 @@ const Projects = () => {
     }, []);
 
     return (
-        <div className=" min-h-screen bg-[#000000] flex flex-col justify-center mx-auto px-24 sm:px-32 lg:px-36 xl:px-72">
+        <div className=" min-h-screen bg-[#000000] flex flex-col justify-center mx-auto px-24 sm:px-32 lg:px-36 xl:px-72 py-10">
             
             <div className="title text-3xl mb-24">
                 Projects
@@ -24,8 +24,8 @@ const Projects = () => {
             <div className="
                 grid grid-cols-1 gap-4
                 justify-items-center
-                md:grid-cols-2 
-                xl:grid-cols-3">
+                sm:grid-cols-2 
+                lg:grid-cols-3">
                 {store.projects.map((project, index) => (
                     <ProjectCard 
                         key={index} 
