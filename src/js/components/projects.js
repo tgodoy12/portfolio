@@ -15,7 +15,7 @@ const Projects = () => {
     }, []);
 
     return (
-        <div className=" min-h-screen bg-[#000000] flex flex-col justify-center mx-auto px-24 sm:px-32 lg:px-36 xl:px-72 py-10">
+        <div className="min-h-screen bg-[#000000] flex flex-col justify-center mx-auto px-24 sm:px-32 lg:px-36 xl:px-72 2xl:px-[30rem] py-10">
             
             <div className="title text-3xl mb-24">
                 Projects
