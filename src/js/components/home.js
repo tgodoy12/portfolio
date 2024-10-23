@@ -30,25 +30,30 @@ const Home = () => {
               <div className="social-icons content-center flex gap-5">
                 <a href="https://www.linkedin.com/in/trilce-godoy/" target="_blank" rel="noopener noreferrer">
                   <Button className="w-10 h-10
+                    flex items-center justify-center
                     border border-[--color-mint] rounded-md 
-                    flex items-center justify-center"
+                    hover:bg-[--color-mint]"
                     icon={<i className="fab fa-linkedin fa-lg" style={{ color: "#FFFCF9" }}></i>}
+                   
                   />
                 </a>
 
                 <a href="https://github.com/tgodoy12" target="_blank" rel="noopener noreferrer">
                   <Button className="w-10 h-10 
-                  flex items-center justify-center 
-                  border border-[--color-mint] rounded-md"
+                  flex items-center justify-center
+                  border border-[--color-mint] rounded-md 
+                  hover:bg-[--color-mint]"
                   icon={<i className="fab fa-github fa-lg" style={{ color: "#FFFCF9" }}></i>}
+            
                   />
+                  
                 </a>
 
                 <Link to="/contact">
                   <Button className="w-10 h-10 
-                  flex items-center justify-center 
+                  flex items-center justify-center
                   border border-[--color-mint] rounded-md 
-                  "
+                  hover:bg-[--color-mint]"
                   icon={<i className="fas fa-envelope fa-lg" style={{ color: "#FFFCF9" }}></i>}
                   />
                 </Link>

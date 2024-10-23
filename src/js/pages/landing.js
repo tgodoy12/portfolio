@@ -5,6 +5,7 @@ import About from "../components/about";
 import Home from "../components/home";
 import SkillsCarousel from "../components/skillsCarousel";
 import Projects from "../components/projects";
+import Contact from "../components/contact";
 
 
 const Landing = () => {
@@ -18,6 +19,8 @@ const Landing = () => {
       <SkillsCarousel />
 
       <Projects />
+
+      <Contact />
     </div>
     
   );
