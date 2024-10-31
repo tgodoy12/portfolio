@@ -36,7 +36,7 @@ const Contact = () => {
                 <form onSubmit={formik.handleSubmit}>
 
                     <div className="grid gap-3">
-                        <label htmlFor="email">Email Address</label>
+                        <label htmlFor="email" className="text-base">Email Address</label>
                         <input
                             id="email"
                             name="email"
