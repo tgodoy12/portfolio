@@ -8,7 +8,7 @@ const About = () => {
 
     // agregar: download cv, certificates in grid, avatar and carousel skills
     return (
-        <div className="min-h-1/2vh flex items-center py-12 bg-[#FBFBFF]">
+        <div className="about min-h-1/2vh flex items-center py-12">
            
             <div className="lg:flex lg:gap-0 gap-10 w-full">
                
@@ -24,9 +24,13 @@ const About = () => {
                 </div>
                 
                 {/* Columna más ancha */}
-                <div className="about-text flex flex-wrap flex-[2] mx-12 lg:ms-0 lg:me-12 lg:items-center xl:pe-24">
-                    <h3 className="mb-3 text-xl font-semibold">About Me</h3>
-                    <p className="mb-5 sm:mb-0">I'm a passionate Fullstack Developer with a love for creating effective web solutions.
+                <div className="about-text 
+                    flex flex-wrap flex-[2] mx-12 p-6
+                    bg-[--color-darkest] rounded-sm border border-[--color-mint]
+                    lg:ms-0 lg:me-12 lg:items-center xl:pe-24">
+                    <h3 className="mb-3 
+                        text-xl font-semibold">About Me</h3>
+                    <p className="sm:mb-0">I'm a passionate Fullstack Developer with a love for creating effective web solutions.
                         My journey into tech started with a deep curiosity about how websites and applications are built, 
                         which led me to immerse myself in learning everything from frontend design to backend functionality. <br/>
                         <br/>
