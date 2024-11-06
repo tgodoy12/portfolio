@@ -1,6 +1,7 @@
 import React from "react";
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
+import "../../styles/contact.css"
 
 const Contact = () => {
 
@@ -25,7 +26,7 @@ const Contact = () => {
       });
 
     return (
-        <div className="min-h-1/2vh bg-[--color-text] 
+        <div className="contact min-h-1/2vh
             px-24 py-10 sm:px-32 lg:px-36 xl:px-72 2xl:px-[30rem]">
 
             <div className="text-3xl mb-24">

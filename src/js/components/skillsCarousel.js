@@ -44,7 +44,7 @@ const SkillsCarousel = () => {
     };
 
     return (
-        <div className="min-h-1/2vh bg-[#FBFBFF] px-11">
+        <div className="skills px-11">
             <div
                 ref={carouselRef}
                 className="flex overflow-x-scroll no-scrollbar gap-6 p-4"
@@ -52,7 +52,7 @@ const SkillsCarousel = () => {
             >
                 {getInfiniteSkills().length > 0 ? (
                     getInfiniteSkills().map((skill, index) => (
-                        <div key={index} className="flex-shrink-0 w-24 h-24">
+                        <div key={index} className="flex-shrink-0 w-16 h-20">
                             <img
                                 className="w-full h-full object-contain transition-transform transform hover:scale-110 duration-300"
                                 src={skill.src}

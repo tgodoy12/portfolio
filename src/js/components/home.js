@@ -32,7 +32,7 @@ const Home = () => {
                   <Button className="w-10 h-10
                     flex items-center justify-center
                     border border-[--color-mint] rounded-md 
-                    hover:bg-[--color-mint]"
+                    hover:border-[--color-caribbean]"
                     icon={<i className="fab fa-linkedin fa-lg" style={{ color: "#FFFCF9" }}></i>}
                    
                   />

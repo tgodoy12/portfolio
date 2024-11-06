@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../../styles/about.css"
+import SkillsCarousel from "./skillsCarousel";
 
 
 
@@ -8,19 +9,24 @@ const About = () => {
 
     // agregar: download cv, certificates in grid, avatar and carousel skills
     return (
-        <div className="about min-h-1/2vh flex items-center py-12">
+        <div className="about min-h-1/2vh py-12">
            
             <div className="lg:flex lg:gap-0 gap-10 w-full">
                
                 {/* Columna más pequeña */}
-                <div className="avatar-box flex justify-center flex-[1] mx-10 mb-10 lg:mb-0">
-                    <div className="w-60 h-60 rounded-full overflow-hidden"> {/* Ajuste del contenedor */}
-                        <img 
-                            src="https://picsum.photos/300" 
-                            alt="avatar" 
-                            className="object-cover w-full h-full"
-                        />
+                <div className="avatar-box flex justify-center flex-[1] 
+                    mx-10 mb-10 lg:mb-0">
+                    <div className="border rounded-full border-[--color-mint]
+                        p-10 bg-[--color-darkest]">
+                        <div className="w-60 h-60 rounded-full overflow-hidden"> {/* Ajuste del contenedor */}
+                            <img 
+                                src="https://picsum.photos/300" 
+                                alt="avatar" 
+                                className="object-cover w-full h-full"
+                            />
+                        </div>
                     </div>
+                    
                 </div>
                 
                 {/* Columna más ancha */}
@@ -56,9 +62,9 @@ const About = () => {
 
             
             
+           
             
-            
-
+            <SkillsCarousel />
             
         </div>
     )
