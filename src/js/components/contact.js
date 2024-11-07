@@ -33,7 +33,10 @@ const Contact = () => {
                 Send me a message
             </div>
 
-            <div className="contact-form">
+            <div className="contact-form
+                p-6
+                bg-[--color-darkest]
+                border-2 border-[--color-mint]">
                 <form onSubmit={formik.handleSubmit}>
 
                     <div className="grid gap-3">

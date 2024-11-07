@@ -16,9 +16,9 @@ const About = () => {
                 {/* Columna más pequeña */}
                 <div className="avatar-box flex justify-center flex-[1] 
                     mx-10 mb-10 lg:mb-0">
-                    <div className="border rounded-full border-[--color-mint]
+                    <div className="border-2 rounded-full border-[--color-mint]
                         p-10 bg-[--color-darkest]">
-                        <div className="w-60 h-60 rounded-full overflow-hidden"> {/* Ajuste del contenedor */}
+                        <div className="w-64 h-64 rounded-full overflow-hidden"> {/* Ajuste del contenedor */}
                             <img 
                                 src="https://picsum.photos/300" 
                                 alt="avatar" 
@@ -30,10 +30,10 @@ const About = () => {
                 </div>
                 
                 {/* Columna más ancha */}
-                <div className="about-text 
-                    flex flex-wrap flex-[2] mx-12 p-6
-                    bg-[--color-darkest] rounded-sm border border-[--color-mint]
-                    lg:ms-0 lg:me-12 lg:items-center xl:pe-24">
+                <div className="about-text
+                    flex flex-wrap flex-[2] mx-10 p-6
+                    bg-[--color-darkest] rounded-sm border-2 border-[--color-mint]
+                    lg:ms-0 lg:me-10 lg:items-center xl:pe-24">
                     <h3 className="mb-3 
                         text-xl font-semibold">About Me</h3>
                     <p className="sm:mb-0">I'm a passionate Fullstack Developer with a love for creating effective web solutions.
