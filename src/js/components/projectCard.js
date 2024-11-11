@@ -8,17 +8,18 @@ const ProjectCard = (props) => {
 
     return (
         <div className="p-5
-            border-2 border-[--color-mint] rounded-lg">
+            border-2 border-[--color-mint] rounded-lg"
+            style={{
+                width: '22rem'
+            }}>
 
             <div 
             className="project-card rounded-lg
-                max-w-80 min-w-48
-                md:max-w-full
                 relative overflow-hidden"
             onMouseEnter={() => setSeeInfo(true)}
             onMouseLeave={() => setSeeInfo(false)}
             style={{
-                height: '18rem'
+                height: '12rem'
             }}
         >
             {/* Fondo de la imagen */}

@@ -13,9 +13,9 @@ const Projects = () => {
         actions.loadProjects();
         // eslint-disable-next-line
     }, []);
-
+//
     return (
-        <div className="min-h-screen bg-[#000000] flex flex-col justify-center mx-auto px-24 sm:px-32 lg:px-36 xl:px-72 2xl:px-[30rem] py-10">
+        <div className="min-h-screen bg-[#000000] flex flex-col justify-center mx-auto px-24 sm:px-32 lg:px-20 xl:px-48 2xl:px-[28rem] py-10">
             
             <div className="title text-3xl mb-24">
                 Projects
@@ -24,7 +24,7 @@ const Projects = () => {
             <div className="
                 grid grid-cols-1 gap-8
                 justify-items-center
-                sm:grid-cols-2 
+                lg:grid-cols-2 
                 ">
                 {store.projects.map((project, index) => (
                     <ProjectCard 
